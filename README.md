@@ -1,24 +1,20 @@
-# README
+# Rails Spotify API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## End-Points
 
-Things you may want to cover:
+### Artists
 
-* Ruby version
+```json 
+    GET /spotify/artists?name="coldplay"
+``` 
+### Playlists
 
-* System dependencies
+```json 
+    GET /spotify/playlists?name="indie"
+``` 
 
-* Configuration
+### Users
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```json 
+    GET /spotify/users?name="devpolish"
+``` 
