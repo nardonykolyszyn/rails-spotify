@@ -13,12 +13,12 @@ require "action_cable/engine"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
-RSpotify::authenticate(ENV.fetch('CLIENT_ID'), ENV.fetch('CLIENT_SECRET'))
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
 Dotenv::Railtie.load
+RSpotify::authenticate(ENV.fetch('CLIENT_ID'), ENV.fetch('CLIENT_SECRET'))
 
 module RailsSpotify
   class Application < Rails::Application
