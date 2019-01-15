@@ -3,13 +3,8 @@
 module Spotify
   class ArtistsController < SpotifyController
     def search
-      artist_name = params[:name]
-      if artist_name.present?
-        @artist = Artist.search(artist_name)
-      else
-        @artist = { error: 'missing name param' }
-      end
-      render json: { artist: @artist }, status: :ok 
+      @artists = params[:name].present? ? Artist.search(params[:name]) : { error: 'missing name param' }
+      render json: { artists: @artists }, status: :ok
     end
   end
 end
