@@ -19,6 +19,8 @@ RSpotify::authenticate('5c44b634b493449da861e506589f5e7c', '243dbef8141e46fcbfd7
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+Dotenv::Railtie.load
+
 module RailsSpotify
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
