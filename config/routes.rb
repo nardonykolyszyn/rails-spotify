@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     get 'users', to: 'users#search'
     get 'categories', to: 'categories#search'
     get 'tracks', to: 'tracks#search'
-    get 'albums', to: 'tracks#search'
+    get 'albums', to: 'albums#search'
   end
 end
