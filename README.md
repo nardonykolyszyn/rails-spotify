@@ -18,3 +18,15 @@
 ```json 
     GET /spotify/users?name="devpolish"
 ``` 
+
+### Tracks
+
+```json 
+    GET /spotify/users?name="Dream on"
+``` 
+
+### Albums
+
+```json 
+    GET /spotify/users?name="The Wall"
+``` 
