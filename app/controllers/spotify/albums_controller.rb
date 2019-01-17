@@ -2,9 +2,6 @@
 
 module Spotify
   class AlbumsController < SpotifyController
-    def search
-      @albums = params[:name].present? ? Album.search(params[:name]) : { error: 'missing name param' }
-      render json: { albums: @albums }, status: :ok
-    end
+    include Searchable
   end
 end
