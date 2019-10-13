@@ -2,6 +2,5 @@
 
 module Spotify
   class AlbumsController < SpotifyController
-    include Searchable
   end
 end

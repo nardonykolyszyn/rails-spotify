@@ -2,6 +2,5 @@
 
 module Spotify
   class ArtistsController < SpotifyController
-    include Searchable
   end
 end

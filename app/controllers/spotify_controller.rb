@@ -2,4 +2,5 @@
 
 class SpotifyController < ApplicationController
   include RSpotify
+  include Searchable
 end
